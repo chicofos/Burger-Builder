@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import Aux from '../Aux/Aux';
+import Auxi from '../Auxi/Auxi';
 import classes from './Layout.css';
 import Toolbar from '../../components/Navigation/Toolbar/Toolbar';
 import SideDrawer from '../../components/Navigation/NavigationItems/SideDrawer/SideDrawer';
@@ -22,7 +22,7 @@ class Layout extends Component {
 
     render(){
         return(
-            <Aux>
+            <Auxi>
                 <Toolbar toggleMenu={this.sideDrawerOpenHandler}/>
 
                 <SideDrawer 
@@ -32,7 +32,7 @@ class Layout extends Component {
                 <main className={classes.Content}>
                     {this.props.children}
                 </main>
-            </Aux>
+            </Auxi>
         )
     }
 }

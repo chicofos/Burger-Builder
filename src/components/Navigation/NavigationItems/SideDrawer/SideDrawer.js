@@ -3,7 +3,7 @@ import Logo from '../../../Logo/Logo';
 import NavigationItems from '../NavigationItems';
 import classes from '../SideDrawer/SideDrawer.css'
 import Backdrop from '../../../UI/Backdrop/Backdrop';
-import Aux from '../../../../hoc/Aux/Aux';
+import Auxi from '../../../../hoc/Auxi/Auxi';
 
 const SideDrawer = (props) => {
     
@@ -14,7 +14,7 @@ const SideDrawer = (props) => {
     }
 
     return (
-        <Aux>
+        <Auxi>
             <Backdrop show={props.open} clicked={props.closed}/>
             <div className={attachedClasses.join(' ')}>
                 <Logo height="11%"/>
@@ -22,7 +22,7 @@ const SideDrawer = (props) => {
                     <NavigationItems />
                 </nav>
             </div>
-        </Aux>
+        </Auxi>
     );
 }
 
